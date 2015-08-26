@@ -70,7 +70,13 @@ body {
 background-color: #f4f1ed/*cream*/;
 }
 /************** Why? **********/
+.why {
+	margin-bottom: 40px;
+}
 
+.why-title {
+	margin-bottom: 30px;
+}
 .img-container-2 {
 background-image: url("letter-2.jpg");
 background-size: cover;
@@ -89,6 +95,8 @@ height: 350px;
 	text-decoration: none;
 	font-weight: bold;
 	background-color: #0d7087;
+	font-size: 22px;
+
 }
 
 .letter-button {
@@ -97,6 +105,7 @@ height: 350px;
 	border-top-right-radius: 8px;
 	border-bottom-right-radius: 8px;
 	font-weight: bold;
+	font-size: 22px;
 	color: #0d7087;
 }
 
@@ -113,4 +122,43 @@ height: 350px;
 .letter-display {
 	display: none;
 }
+/************** Prcing text **********/
 
+.pricing-container {
+	margin-bottom: 40px;
+}
+.size {
+	font-size: 18px;
+}
+/************** Send now **********/
+.border {
+	border-top: 3px solid gray;
+}
+.border-2 {
+	border-bottom: 3px solid gray;
+}
+
+.send-margin {
+	margin-bottom: 30px;
+}
+
+.send-margin-2 {
+	margin-bottom: 50px;
+}
+.send-button {
+	padding: 15px 35px;
+	margin-right: -5px;
+	color: white;
+	text-decoration: none;
+	font-size: 24px;
+	background-color: #0d7087;
+	box-shadow: none;
+	border: none;
+}
+
+footer {
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	vertical-align: middle;
+}
