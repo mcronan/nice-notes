@@ -1,0 +1,116 @@
+h2, h3, .pricing, .center{
+text-align: center;
+}
+
+.inline {
+list-style: none;
+display: inline-block;
+}
+
+.nav {
+color: white;
+font-size: 25px;
+}
+
+.img-container {
+background-image: url("hero-2.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 800px;
+}
+
+.spacer {
+height: 270px;
+}
+
+.title {
+font-size: 80px;
+line-height: .9;
+color: #0d7087;
+}
+
+.subtitle {
+color: white;
+}
+
+/*************** Bottom of fold ***********/
+.info {
+text-align: center;
+font-size: 20px;
+height: 200px;
+padding-top: 40px;
+
+}
+
+/************** Explainer **********/
+.explainer {
+font-size: 20px;
+}
+
+.write, .send, .love {
+font-weight: bold;
+font-size: 26px;
+}
+
+.icon {
+font-size: 4em;
+color: #0d7087;
+}
+
+.explainer-margin-1 {
+margin-top: 20px;
+margin-bottom: 70px;
+}
+.explainer-margin {
+margin-top: 70px;
+margin-bottom: 70px;
+}
+
+body {
+background-color: #f4f1ed/*cream*/;
+}
+/************** Why? **********/
+
+.img-container-2 {
+background-image: url("letter-2.jpg");
+background-size: cover;
+height: 350px;
+}
+
+/************** Buttons **********/
+
+.note-button {
+	padding: 15px 35px;
+	border: 2px solid #0d7087;
+	margin-right: -5px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #0d7087;
+}
+
+.letter-button {
+	padding:  15px 35px;
+	border: 2px solid #0d7087;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	font-weight: bold;
+	color: #0d7087;
+}
+
+.button-margin {
+	margin-bottom: 50px;
+}
+
+/************** Icons **********/
+
+.icon-2 {
+	font-size: 2.4em;
+}
+
+.letter-display {
+	display: none;
+}
+
