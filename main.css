@@ -156,9 +156,44 @@ height: 350px;
 	border: none;
 }
 
+/************** Footer **********/
 footer {
 	height: 100px;
 	text-align: center;
 	line-height: 100px;
 	vertical-align: middle;
+}
+
+/************** Payment Page **********/
+.nav-2 {
+	color: gray;
+	font-size: 25px;
+}
+
+.payment-title {
+	color: #0d7087;
+	
+}
+
+.payment-subtitle {
+	margin: 0 auto;
+	color: #0d7087;
+	width: 700px;
+}
+
+.spacer-3 {
+	height: 70px; 
+}
+
+.spacer-4 {
+	margin-bottom: 50px; 
+}
+
+.margin-name {
+	margin-bottom: 20px;
+}
+
+.btn.btn-primary {
+	width: 90px;
+	margin-top: 8px;
 }
