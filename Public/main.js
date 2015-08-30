@@ -1,38 +1,44 @@
 var noteApp = angular.module('noteApp',['ngRoute', 'ngResource']);
 
-noteApp.config(function($routeProvider) {
-	$routeProvider.when('payment', {
-			templateUrl     : '/templates/forms', 
-			controller      : 'noteController'
-		})
-})
+// noteApp.config(function($routeProvider) {
+// 	$routeProvider
+// 		.when('payment', {
+// 			templateUrl     : '/templates/forms', 
+// 			controller      : 'noteController'
+// 		})
+// })
 
 noteApp.factory('noteFactory', function($resource) {
 	
-	var model = $resource('/api/notes')
+	var model = $resource('/api/notes');
 
 	return {
 		model : model, 
-		raps  : model.query()
+		notes  : model.query()
 	}
 })
 
-noteApp.controller('noteController', function($scope, noteFactory, $anchorScroll) {
+noteApp.controller('noteController', function($scope, $anchorScroll, $location, noteFactory) {
+	
+	$scope.notes = noteFactory.notes;
 
+	console.log("I am the controller")
 	$scope.goDown = function() {
 		$location.hash('next-recipient')
 
 		$anchorScroll();
 	};
 
+	$scope.addNote = function() {
+		console.log("hello")
+		var userNote = new noteFactory.model(this.newNote)
+			userNote.$save(function(returnData) {
+				console.log(returnData)
+				noteFactory.notes.push(returnData)
+			})
+	}
+
 });
-
-
-
-
-
-
-
 
 
 //************ jQuery old ************//

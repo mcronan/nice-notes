@@ -184,6 +184,10 @@ footer {
 	height: 70px; 
 }
 
+.spacer-small {
+	height: 10px; 
+}
+
 .spacer-4 {
 	margin-bottom: 50px; 
 }

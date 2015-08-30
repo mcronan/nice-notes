@@ -3,7 +3,6 @@ var bodyParser = require('body-parser');
 var indexController = require('./Controllers/index.js');
 var apiController = require('./Controllers/api.js');
 
-
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/nice-notes') 
 
@@ -17,9 +16,10 @@ app.use(bodyParser.json());
 
 app.get('/', indexController.index);
 app.get('/payment', indexController.payment);
-app.get('/templates/:templateName/', indexController.templates);
+app.get('/templates/forms', indexController.templates);
 
-app.get('/api/notes', apiController.get)
+app.get('/api/notes', apiController.get);
+app.post('/api/notes', apiController.noteSave)
 // app.listen(app.get('port'), function() {
 //   console.log("Node app is running on port:" + app.get('port'))
 // })

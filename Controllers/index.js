@@ -5,7 +5,7 @@ var indexController = {
 		res.render('index');
 	}, 
 	templates: function(req, res) {
-		res.render('templates/' + req.params.templateName)
+		res.render('templates/forms')
 	},
 	payment: function(req, res) {
 		res.render('payment')

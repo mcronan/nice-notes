@@ -1,14 +1,14 @@
 extends layout 
 
 block content
-  .img-container
+  .img-container(ng-controller="noteController")
     .row.nav
         ul.col-sm-12
           li.inline.col-sm-1  Home
           li.inline.col-sm-1  How? 
           li.inline.col-sm-1  Why? 
           li.inline.col-sm-1  Pricing 
-          li.inline.col-sm-2  Send a Note! 
+          li.inline.col-sm-3  Send a Note! 
       .row
         .col-sm-12.spacer
       .row
@@ -19,7 +19,7 @@ block content
         .col-sm-offset-2.col-sm-4.subtitle
           p  We send beautiful handwritten notes.
           p  You take the credit. 
-    .row.info
+  .row.info
       .col-sm-12
         p
           | Others text, tweet, and email. Be remembered with a handwritten note.
@@ -32,7 +32,7 @@ block content
         h2  How does it work? 
     .explainer
       .row.explainer-margin-1
-        .col-sm-offset-4.col-sm-3
+        .col-sm-offset-3.col-sm-3
           p.write  Write 
           p  Send us your message! 
           p
@@ -41,7 +41,7 @@ block content
         .icon.col-sm-offset-1.col-sm-1
           i.fa.fa-pencil
       .row.explainer-margin
-        .icon.col-sm-offset-4.col-sm-1
+        .icon.col-sm-offset-3.col-sm-1
           i.fa.fa-envelope
         .col-sm-offset-3.col-sm-4
           p.send  We Post It 
@@ -50,7 +50,7 @@ block content
           p  paper and a high-grade envelope.
           p
       .row.explainer-margin
-        .col-sm-offset-4.col-sm-3
+        .col-sm-offset-3.col-sm-3
           p.send  Respect 
           p  Sleep well knowing the recipient 
           p
@@ -200,8 +200,9 @@ block content
         .row.center
           .col-sm-12
             button.send-button.send-margin-2(type='button')
-              | Send a note now!
+               a(href="payment") Send a note now!
             .border-2
         footer
           p  2015 Nice Notes 
-      
+       
+  div(ng-view)
