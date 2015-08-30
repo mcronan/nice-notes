@@ -31,7 +31,7 @@ var stripe = require("./stripe/stripe")
 	// (Assuming you're using express - expressjs.com)
 	// Get the credit card details submitted by the form
 
-	var charge = stripe.charges.create({
+	var charge = stripe.stripe.charges.create({
 	  amount: 300, // amount in cents, again
 	  currency: "eur",
 	  source: stripeToken,
