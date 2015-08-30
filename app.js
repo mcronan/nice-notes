@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 app.get('/', indexController.index);
 app.get('/payment', indexController.payment);
-app.get('/templates/forms', indexController.templates);
+// app.get('/templates/forms', indexController.templates);
 
 app.get('/api/notes', apiController.get);
 app.post('/api/notes', apiController.noteUpdate)
