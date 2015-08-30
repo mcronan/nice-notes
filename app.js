@@ -23,7 +23,7 @@ app.post('/api/notes', apiController.noteUpdate)
 
 // Set your secret key: remember to change this to your live secret key in production
 // See your keys here https://dashboard.stripe.com/account/apikeys
-var stripe = require("./stripe/stripe")
+var stripe = require("stripe/stripe")
 	app.post('/charge', function(request, res) {
 		var stripeToken = request.body.stripeToken;
 
@@ -31,7 +31,7 @@ var stripe = require("./stripe/stripe")
 	// (Assuming you're using express - expressjs.com)
 	// Get the credit card details submitted by the form
 
-	var charge = stripe.stripe.charges.create({
+	var charge = stripe.charges.create({
 	  amount: 300, // amount in cents, again
 	  currency: "eur",
 	  source: stripeToken,
