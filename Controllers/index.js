@@ -1,4 +1,4 @@
-// var Note = require('../Model/model')
+var Note = require('../Model/model')
 
 var indexController = {
 	index: function(req, res) {
