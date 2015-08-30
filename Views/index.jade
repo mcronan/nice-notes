@@ -4,11 +4,12 @@ block content
   .img-container(ng-controller="noteController")
     .row.nav
         ul.col-sm-12
-          li.inline.col-sm-1  Home
-          li.inline.col-sm-1  How? 
-          li.inline.col-sm-1  Why? 
-          li.inline.col-sm-1  Pricing 
-          li.inline.col-sm-3  Send a Note! 
+          li.inline.col-sm-1  LOGO
+          li(onClick="javascript:location.href = '##how';").inline.col-sm-1  How? 
+          li(onClick="javascript:location.href = '##why';").inline.col-sm-1  Why? 
+          li(onClick="javascript:location.href = '##pricing';").inline.col-sm-1  Pricing 
+          a(href="payment")
+            li.inline.col-sm-3  Send a Note! 
       .row
         .col-sm-12.spacer
       .row
@@ -27,16 +28,14 @@ block content
           | 				It's the small touches that make a big difference. That really ring home.
           br
           | 				Let us help you make a difference with a handwritten note.
-    .row
+    .row#how
       .col-sm-12
         h2  How does it work? 
     .explainer
       .row.explainer-margin-1
         .col-sm-offset-3.col-sm-3
           p.write  Write 
-          p  Send us your message! 
-          p
-          p  We'll get scribing. 
+          p  Send us your message! We'll get scribing. 
           p
         .icon.col-sm-offset-1.col-sm-1
           i.fa.fa-pencil
@@ -45,20 +44,19 @@ block content
           i.fa.fa-envelope
         .col-sm-offset-3.col-sm-4
           p.send  We Post It 
-          p  We'll send it out on specialty
-          p
-          p  paper and a high-grade envelope.
+          p  We'll send it out on specialty paper and a high-grade envelope.
           p
       .row.explainer-margin
         .col-sm-offset-3.col-sm-3
           p.send  Respect 
-          p  Sleep well knowing the recipient 
-          p
-          p  knows you care. 
+          p  Sleep well knowing the recipient knows you care. 
           p
         .icon.col-sm-offset-1.col-sm-1
           i.fa.fa-heart
-    .why
+   #why
+    .row#why-space
+      .col-sm-12
+   .why
       .row.why-title
         .col-sm-12
           h2  Why? 
@@ -66,17 +64,15 @@ block content
         .col-sm-6.img-container-2
         .col-sm-6.info
           p
-            | We know what you're thinking. Why bother? Is it really worth it?
+            | We know what you're thinking. Why bother? Is it really worth it? In short, yes. We can guarantee you that these notes will be read and remembered.
             br
-            | 				In short, yes. We can guarantee you that these notes will be read and remembered.
+            |         It's so rare that someone goes out of their way to help these days.
             br
-            | 				A person goes out of their way to help you, you remember.				
+            | 				Be one of the few. 
             br
-            | 				Why? Because it's so rare these days.
-            br
-            | 				Be one of the few. Show you care with a Nice Note.
+            |         Show you care with a Nice Note.
     .pricing-container
-      .row
+      .row#pricing
         .col-sm-12
           h2  Pricing 
           h3  I need to send a: 

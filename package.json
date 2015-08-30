@@ -1,8 +1,15 @@
 {
+  "name": "nice-notes-heroku",
+  "description": "Beautiful Handwritten Notes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
 	"dependencies": {
 		"express": "^4",
 		"jade": "^1",
 		"body-parser": "^1",
-		"mongoose": "^4.1.2"
+		"mongoose": "^4.1.2",
+		"stripe": "^3.7.0"
 	}
 }

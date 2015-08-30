@@ -4,7 +4,11 @@ var noteSchema = mongoose.Schema({
 		sendName        : String,
 		sendEmail       : String,
 		receiveName     : String,
-		receiveAddress  : String,
+		address1  		: String,
+		address2  		: String,
+		address3  		: String,
+		address4  		: String,
+		address5  		: String,
 		note            : String, 
 })
 

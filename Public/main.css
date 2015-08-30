@@ -3,84 +3,87 @@ text-align: center;
 }
 
 .inline {
-list-style: none;
-display: inline-block;
+	list-style: none;
+	display: inline-block;
 }
 
 .nav {
-color: white;
-font-size: 25px;
+	color: white;
+	font-size: 25px;
 }
 
 .img-container {
-background-image: url("hero-2.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-height: 800px;
+	background-image: url("hero-2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 800px;
 }
 
 .spacer {
-height: 270px;
+	height: 270px;
 }
 
 .title {
-font-size: 80px;
-line-height: .9;
-color: #0d7087;
+	font-size: 80px;
+	line-height: .9;
+	color: #0d7087;
 }
 
 .subtitle {
-color: white;
+	color: white;
 }
 
 /*************** Bottom of fold ***********/
 .info {
-text-align: center;
-font-size: 20px;
-height: 200px;
-padding-top: 40px;
+	text-align: center;
+	font-size: 20px;
+	height: 200px;
+	padding-top: 40px;
 
 }
 
 /************** Explainer **********/
 .explainer {
-font-size: 20px;
+	font-size: 20px;
 }
 
 .write, .send, .love {
-font-weight: bold;
-font-size: 26px;
+	font-weight: bold;
+	font-size: 26px;
 }
 
 .icon {
-font-size: 4em;
-color: #0d7087;
+	font-size: 4em;
+	color: #0d7087;
 }
 
 .explainer-margin-1 {
-margin-top: 20px;
-margin-bottom: 70px;
+	margin-top: 20px;
+	margin-bottom: 70px;
 }
 .explainer-margin {
-margin-top: 70px;
-margin-bottom: 70px;
+	margin-top: 70px;
+	margin-bottom: 70px;
 }
 
 body {
-background-color: #f4f1ed/*cream*/;
+	background-color: #f4f1ed/*cream*/;
 }
 /************** Why? **********/
 .why {
-	margin-bottom: 40px;
+	margin-bottom: 100px;
 }
 
+#why-space {
+	height:45px;
+}
 .why-title {
 	margin-bottom: 30px;
 }
 .img-container-2 {
-background-image: url("letter-2.jpg");
-background-size: cover;
-height: 350px;
+	background-image: url("letter-2.jpg");
+	background-size: cover;
+	height: 350px;
 }
 
 /************** Buttons **********/
@@ -199,4 +202,12 @@ footer {
 .btn.btn-primary {
 	width: 90px;
 	margin-top: 8px;
+}
+/**** for anchors *****/
+a:visited {
+	color: white !important;
+}
+
+a:active {
+	color: white !important;
 }

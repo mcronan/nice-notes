@@ -41,50 +41,52 @@ block content
 
     .row
       .col-sm-offset-3.col-sm-6
-        form.form-horizontal
+        form(ng-submit="addNote()").form-horizontal
           .form-group
             label.col-sm-2.control-label(for='') Address 1
             .col-sm-10
-              input#inputEmail3.form-control(type='text', placeholder='Address 1')
+              input#inputEmail3.form-control(type='text', placeholder='Address 1' ng-model="newNote.address1")
           .form-group
             label.col-sm-2.control-label(for='') Address 2
             .col-sm-10
-              input#inputPassword3.form-control(type='text', placeholder='Address 2')
+              input#inputPassword3.form-control(type='text', placeholder='Address 2' ng-model="newNote.address2")
           .form-group
             label.col-sm-2.control-label(for='') City
             .col-sm-10
-              input#inputPassword3.form-control(type='text', placeholder='City')
+              input#inputPassword3.form-control(type='text', placeholder='City' ng-model="newNote.address3")
           .form-group
             label.col-sm-2.control-label(for='') County
             .col-sm-10
-              input#inputPassword3.form-control(type='text', placeholder='County')
+              input#inputPassword3.form-control(type='text', placeholder='County' ng-model="newNote.address4")
           .form-group
             label.col-sm-2.control-label(for='') Post Code
             .col-sm-2
-              input#inputPassword3.form-control(type='text', placeholder='Post Code')
+              input#inputPassword3.form-control(type='text', placeholder='Post Code' ng-model="newNote.address5")
           .form-group
             .col-sm-offset-2.col-sm-10
-              button.btn.btn-primary.btn-lg(type='submit' ng-click="goDownAgain()" onClick="javascript:location.href = '##next-2';") Next
+              button.btn.btn-primary.btn-lg(type='submit' onClick="javascript:location.href = '##next-2';") Next
     //- SENDER Details - This to only show when NEXT is clicked
     //- Address may be optional for SENDER
     //- this spacer to be deleted
     .spacer-3
     .spacer-3
     .spacer-3
-    .spacer-3
     .spacer-3a(id="#next-2")
+    .spacer-3
     .spacer-3
     .row
       .col-sm-offset-3.col-sm-6
-        form.form-horizontal
+        form(ng-submit="addNote()").form-horizontal
           .form-group
             label.col-sm-2.control-label(for='') Your Name
             .col-sm-10
-              input#inputEmail3.form-control(type='text', placeholder='First + Last Name')
+              input#inputEmail3.form-control(type='text', placeholder='First + Last Name' ng-model="newNote.sendName")
           .form-group
             label.col-sm-2.control-label(for='') Your Email
             .col-sm-10
-              input#inputEmail3.form-control(type='email', placeholder='Your email address')
+              input#inputEmail3.form-control(type='email', placeholder='Your email address' ng-model="newNote.sendEmail")
+            button.btn.btn-primary.btn-lg(type="submit" onClick="javascript:location.href = '##next-3';") Submit
+             
           //- .form-group
           //-   label.col-sm-2.control-label(for='') Address 1
           //-   .col-sm-10
@@ -107,11 +109,17 @@ block content
               input#inputPassword3.form-control(type='text', placeholder='Post Code')
           //- .form-group
           //-   .col-sm-offset-2.col-sm-10
-         //-     button.btn.btn-primary.btn-lg(type='submit') Next
+         //-     button.btn.btn-primary.btn-lg(type='submit') Next 
+    .spacer-3
+    .spacer-3
+    .spacer-3#next-3
+    .spacer-3
+    .spacer-3
     .row
       .col-sm-offset-4.col-sm-3
-        //- form(action='', method='POST')
-        //-   script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_2ULIWVo2R6Tjd5MckkZ6aS7R', data-amount='2000', data-name='Demo Site', data-description='2 widgets ($20.00)', data-image='/128x128.png', data-locale='auto')
+        form(action='/charge', method='POST')
+          script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_2ULIWVo2R6Tjd5MckkZ6aS7R', data-amount='300', data-name='Nice Notes', data-description='1 Note (€3.00)', data-image='../Public/hero-2.jpg', data-locale='auto')
+    .spacer-3
     .spacer-3
     .spacer-3
     .spacer-3

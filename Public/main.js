@@ -23,11 +23,11 @@ noteApp.controller('noteController', function($scope, $anchorScroll, $location, 
 	$scope.notes = noteFactory.notes;
 
 	console.log("I am the controller")
-	$scope.goDown = function() {
-		$location.hash('next-recipient')
+	// $scope.goDown = function() {
+	// 	$location.hash('next-recipient')
 
-		$anchorScroll();
-	};
+	// 	$anchorScroll();
+	// };
 
 	$scope.addNote = function() {
 		console.log("hello")
@@ -37,7 +37,15 @@ noteApp.controller('noteController', function($scope, $anchorScroll, $location, 
 				noteFactory.notes.push(returnData)
 			})
 	}
+	$scope.finalButton = true;
+	$scope.stripeButton = true;
 
+	$scope.switchButtons = function() {
+		$scope.finalButton = false;
+		// $scope.stripeButton = false;
+
+		
+	}
 });
 
 
