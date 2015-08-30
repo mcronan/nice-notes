@@ -8,7 +8,7 @@ var indexController = {
 	// 	res.render('templates/forms')
 	// },
 	payment: function(req, res) {
-		res.render('payment')
+		res.render('payment');
 	} 
 }
 
