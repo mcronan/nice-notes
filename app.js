@@ -23,8 +23,7 @@ app.post('/api/notes', apiController.noteUpdate)
 
 // Set your secret key: remember to change this to your live secret key in production
 // See your keys here https://dashboard.stripe.com/account/apikeys
-var stripe = require("stripe")("sk_test_Wq11p72a8WY59kvdP5hgXBPQ");
-
+var stripe = require("stripe.js")
 	app.post('/charge', function(request, res) {
 		var stripeToken = request.body.stripeToken;
 
