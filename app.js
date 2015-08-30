@@ -19,7 +19,7 @@ app.get('/payment', indexController.payment);
 // app.get('/templates/forms', indexController.templates);
 
 app.get('/api/notes', apiController.get);
-app.post('/api/notes', apiController.noteUpdate)
+app.post('/api/notes', apiController.noteUpdate);
 
 // Set your secret key: remember to change this to your live secret key in production
 // See your keys here https://dashboard.stripe.com/account/apikeys
