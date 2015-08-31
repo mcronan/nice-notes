@@ -1,4 +1,4 @@
-var noteApp = angular.module('noteApp',['ngRoute', 'ngResource']);
+var noteApp = angular.module('noteApp',['ngResource']);
 
 // noteApp.config(function($routeProvider) {
 // 	$routeProvider
