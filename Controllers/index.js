@@ -2,10 +2,10 @@ var Note = require('../Model/model')
 
 var indexController = {
 	index: function(req, res) {
-		res.render('index');
+		res.render('../views/index');
 	}, 
 	payment: function(req, res) {
-		res.render('payment');
+		res.render('../views/payment');
 	} 
 }
 
