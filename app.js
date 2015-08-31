@@ -9,7 +9,7 @@ mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/nice-notes')
 var app = express();
 app.set('view engine', 'jade');
 // app.set('views', __dirname + '/views');
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: false}));
 // angular needs to parse json
