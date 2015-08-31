@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 // app.get('/', indexController.index);
 app.get('/',  function(req, res) {
-	res.render('views/index')
+	res.render('/views/index')
 })
 
 app.get('/payment', indexController.payment);
