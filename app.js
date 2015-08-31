@@ -1,14 +1,14 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var indexController = require('./Controllers/index.js');
-var apiController = require('./Controllers/api.js');
+var indexController = require('./controllers/index.js');
+var apiController = require('./controllers/api.js');
 
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/nice-notes') 
 
 var app = express();
 app.set('view engine', 'jade');
-app.set('views', __dirname + '/views/');
+app.set('views', __dirname + '/views');
 // app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: false}));
