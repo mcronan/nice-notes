@@ -1,4 +1,4 @@
-var Note = require('../model/model')
+var Note = require('../Model/model')
 
 var apiController = {
 	
