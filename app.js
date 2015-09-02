@@ -1,8 +1,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-// var indexController = require('./controllers/index.js');
+var indexController = require('./controllers/index.js');
 var apiController = require('./controllers/api.js');
-var path = require("path");
+// var path = require("path");
 
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/nice-notes') 
