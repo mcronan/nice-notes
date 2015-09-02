@@ -16,10 +16,10 @@ app.use(bodyParser.urlencoded({extended: false}));
 // angular needs to parse json
 app.use(bodyParser.json());
 
-// app.get('/', indexController.index);
-app.get('/',  function(req, res) {
-	res.render('index')
-})
+app.get('/', indexController.index);
+// app.get('/',  function(req, res) {
+// 	res.render('index')
+// })
 
 app.get('/payment', indexController.payment);
 // app.get('/templates/forms', indexController.templates);
