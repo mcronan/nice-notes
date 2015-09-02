@@ -32,7 +32,7 @@ app.post('/api/notes', apiController.noteUpdate);
 
 // var stripe = require("stripe")
 
-var stripe = require("stripe")("sk_live_YduGsINzPuMvH89fidWowujj");
+var stripe = require("stripe")("sk_test_Wq11p72a8WY59kvdP5hgXBPQ");
 
 	
 app.post('/charge', function(request, res) {
@@ -51,6 +51,7 @@ app.post('/charge', function(request, res) {
 	  if (err && err.type === 'StripeCardError') {
 	    // The card has been declined
 	  }
+	  res.send("completed payment!")
 	});
 
 })
