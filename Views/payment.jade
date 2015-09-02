@@ -84,44 +84,36 @@ block content
             label.col-sm-2.control-label(for='') Your Email
             .col-sm-10
               input#inputEmail3.form-control(type='email', placeholder='Your email address' ng-model="newNote.sendEmail")
-            button.btn.btn-primary.btn-lg(type="submit" onClick="javascript:location.href = '##next-3';") Submit
-             
-          //- .form-group
-          //-   label.col-sm-2.control-label(for='') Address 1
-          //-   .col-sm-10
-          //-     input#inputEmail3.form-control(type='text', placeholder='Address 1')
-          //- .form-group
-          //-   label.col-sm-2.control-label(for='') Address 2
-          //-   .col-sm-10
-          //-     input#inputPassword3.form-control(type='text', placeholder='Address 2')
-          //- .form-group
-          //-   label.col-sm-2.control-label(for='') City
-          //-   .col-sm-10
-          //-     input#inputPassword3.form-control(type='text', placeholder='City')
-          //- .form-group
-          //-   label.col-sm-2.control-label(for='') County
-          //-   .col-sm-10
-          //-     input#inputPassword3.form-control(type='text', placeholder='County')
-          //- .form-group
-          //-   label.col-sm-2.control-label(for='') Post Code
-          //-   .col-sm-2
-              input#inputPassword3.form-control(type='text', placeholder='Post Code')
-          //- .form-group
-          //-   .col-sm-offset-2.col-sm-10
-         //-     button.btn.btn-primary.btn-lg(type='submit') Next 
-    .spacer-3
+            button.btn.btn-primary.btn-lg(type="submit" onClick="javascript:location.href = '##next-3';") Next
     .spacer-3
     .spacer-3#next-3
-    .spacer-3
-    .spacer-3
+  .row
+    .col-sm-offset-5.col-sm-5
+     #box
+      .row
+        .col-sm-12
+          h3#pay-now Payment
+       .row
+        .col-sm-12
+          h5 Send your note:
+      .row
+        .col-sm-12.center
+          form(action='/charge', method='POST')
+            script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_live_0YZiNvP3tg4LS9UlOmgLqCeg', data-amount='300', data-name='Nice Notes', data-description='1 Note (€3.00)', data-image='', data-locale='auto')
+  .spacer-3
+  .spacer-3
+  .row
+    .col-sm-12.center.stripe
+        img(src="stripe.png")
     .row
-      .col-sm-offset-4.col-sm-3
-        form(action='/charge', method='POST')
-          script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_live_0YZiNvP3tg4LS9UlOmgLqCeg', data-amount='300', data-name='Nice Notes', data-description='1 Note (€3.00)', data-image='', data-locale='auto')
-    .spacer-3
-    .spacer-3
-    .spacer-3
-    .spacer-3
-    .spacer-3
+      .card-logos
+        .col-sm-2
+          <i class="fa fa-cc-mastercard card"></i>
+        .col-sm-2
+          <i class="fa fa-cc-stripe card"></i>
+        .col-sm-2
+          <i class="fa fa-cc-visa card"></i>
+        .col-sm-2
+          <i class="fa fa-cc-amex card"></i>
     footer
-        p  2015 Nice Notes 
+      p  © 2015 Nice Notes 
