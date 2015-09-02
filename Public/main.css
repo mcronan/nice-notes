@@ -234,18 +234,10 @@ a:active {
 	margin-bottom: 10px;
 }
 
-.payment-section {
-	height: 180px;
-	width: 100px;
-	background-color: white;
-	width: 28%;
-	margin: 0 auto;
-	padding-left: 8.5%;
-}
-
 #box {
 	height: 170px;
-	width: 150px;
+/*	width: 150px;
+*/	width: 42%;
 	background-color: white;
 	-moz-box-shadow:     0 0 5px #000000;
     -webkit-box-shadow:  0 0 5px #000000;
