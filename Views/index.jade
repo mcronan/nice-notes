@@ -1,5 +1,5 @@
 extends layout 
-
+link(rel="shortcut icon", type="image/x-icon", href="../Public/favicon.ico")
 block content
   .img-container(ng-controller="noteController")
     .row.nav
@@ -8,6 +8,7 @@ block content
           li(onClick="javascript:location.href = '##how';").inline.col-sm-1  How? 
           li(onClick="javascript:location.href = '##why';").inline.col-sm-1  Why? 
           li(onClick="javascript:location.href = '##pricing';").inline.col-sm-1  Pricing 
+
           a(href="payment")
             li.inline.col-sm-3  Send a Note! 
       .row
@@ -204,4 +205,4 @@ block content
         footer
           p  © 2015 Nice Notes 
        
-  div(ng-view)
+  link(rel="shortcut icon", type="image/x-icon", href="../Public/favicon.ico")
