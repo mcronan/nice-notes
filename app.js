@@ -52,9 +52,9 @@ app.post('/charge', function(request, res) {
 
 })
 
-app.get('/charge', function(req, res) {
-	// res.send("hello")
-})
+// app.get('/charge', function(req, res) {
+// 	// res.send("hello")
+// })
 
 
 
