@@ -216,6 +216,7 @@ a:active {
 
 #pay-now {
 	text-decoration: underline;
+	color: #0d7087;
 }
 
 /******* for credit cards ********/
@@ -235,11 +236,15 @@ a:active {
 }
 
 #box {
-	height: 170px;
-/*	width: 150px;
-*/	width: 42%;
+	height: 210px;
+	padding-left: 2.5%;
+	width: 42%;
 	background-color: white;
 	-moz-box-shadow:     0 0 5px #000000;
     -webkit-box-shadow:  0 0 5px #000000;
     box-shadow:          0 0 5px #000000;
+}
+
+.send-note {
+	margin-bottom: 50px;
 }
