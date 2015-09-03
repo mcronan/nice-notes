@@ -4,13 +4,13 @@ block content
   .img-container(ng-controller="noteController")
     .row.nav
         ul.col-sm-12
-          li.inline.col-sm-1  LOGO
-          li(onClick="javascript:location.href = '##how';").inline.col-sm-1  How? 
-          li(onClick="javascript:location.href = '##why';").inline.col-sm-1  Why? 
-          li(onClick="javascript:location.href = '##pricing';").inline.col-sm-1  Pricing 
+          li.inline.col-sm-2 Nice Notes
+          li(id="navHov" onClick="javascript:location.href = '##how';").inline.col-sm-1  How? 
+          li(id="navHov" onClick="javascript:location.href = '##why';").inline.col-sm-1  Why? 
+          li(id="navHov" onClick="javascript:location.href = '##pricing';").inline.col-sm-1  Pricing 
 
           a(href="payment")
-            li.inline.col-sm-3  Send a Note! 
+            li(id="navHov").inline.col-sm-3 Send a Note! 
       .row
         .col-sm-12.spacer
       .row
@@ -203,6 +203,6 @@ block content
                a(href="payment") Send a note now!
             .border-2
         footer
-          p   p © 2015 Nice Notes  ||  nicenoteshq@gmail.com
+          p    © 2015 Nice Notes  |  nicenoteshq@gmail.com
        
   link(rel="shortcut icon" type="image/x-icon" href="/favicon.ico")
