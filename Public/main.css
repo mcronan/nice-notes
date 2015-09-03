@@ -217,6 +217,7 @@ a:active {
 #pay-now {
 	text-decoration: underline;
 	color: #0d7087;
+	margin-bottom: 20px;
 }
 
 /******* for credit cards ********/
