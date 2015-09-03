@@ -228,7 +228,7 @@ a:active {
 .card-logos {
 	width: 40%;
 	margin: 0 auto;
-	padding-left: 8.5%;
+	padding-left: 10%;
 }
 
 .stripe {
@@ -253,4 +253,8 @@ a:active {
 	background-color: #0d7087;
 	font-size: 25px;
 	width: 100px;
+}
+/******* check ********/
+.fa-check {
+	color: green;
 }
