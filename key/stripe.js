@@ -1,3 +1,3 @@
-var stripe = require("stripe")("sk_test_Wq11p72a8WY59kvdP5hgXBPQ");
+var stripe = require("stripe")("sk_live_YduGsINzPuMvH89fidWowujj");
 
 module.exports = stripe;
