@@ -17,17 +17,21 @@ block content
         h3.payment-subtitle
           | Make a difference in someone's life today - send a beautiful handrwitten note with the click of a button!
     //- ENTER NAME OF RECIPIENT
+    .spacer-3
+    .row
+      .col-sm-12
+        h4 Recipient Name and Your Note:
     .row.margin-name
-      .col-sm-offset-3.col-sm-4
+      .col-sm-offset-4.col-sm-4
         form(ng-submit="addNote()")
          input#the-note.form-control(type='text', placeholder='Please enter recipient name' ng-model="newNote.receiveName")
         //- NOTE FOR RECIPIENT
         .spacer-small
         .row
           .col-sm-offset-3.col-sm-8
-          textarea.form-control(rows='10', placeholder='Enter your note here' ng-model="newNote.note")
+          textarea.form-control(rows='10', placeholder='Enter your note here!' ng-model="newNote.note")
         .row
-          .col-sm-2
+          .col-sm-2#first-button
           //- a(href="##bottom")
           input.btn.btn-primary.btn-lg(type="submit" ng-click="addNote()" value="Next" onClick="javascript:location.href = '##next';") 
 
@@ -38,6 +42,9 @@ block content
     a(id="#next")
     .spacer-3
 
+    .row 
+      .col-sm-12
+        h4 Recipient address:
     .row
       .col-sm-offset-3.col-sm-6
         form(ng-submit="addNote()").form-horizontal
@@ -73,6 +80,10 @@ block content
     .spacer-3a(id="#next-2")
     .spacer-3
     .spacer-3
+
+    .row 
+      .col-sm-12
+        h4 Your details:
     .row
       .col-sm-offset-3.col-sm-6
         form(ng-submit="addNote()").form-horizontal
@@ -84,7 +95,8 @@ block content
             label.col-sm-2.control-label(for='') Your Email
             .col-sm-10
               input#inputEmail3.form-control(type='email', placeholder='Your email address' ng-model="newNote.sendEmail")
-            button.btn.btn-primary.btn-lg(type="submit" onClick="javascript:location.href = '##next-3';") Next
+            .col-sm-10
+            button.btn.btn-primary.btn-lg.last-button(type="submit" onClick="javascript:location.href = '##next-3';") Next
     .spacer-3
     .spacer-3#next-3
   .row
@@ -92,17 +104,17 @@ block content
      #box
       .row
         .col-sm-12
-          h3#pay-now Payment
+          h2#pay-now Payment
       .row
-        .col-sm-12
+        .col-sm-12.payment-size
           p Sent within 24 hours         
            i.fa.fa-check 
       .row
-        .col-sm-12
+        .col-sm-12.payment-size
           p Secure         
            i.fa.fa-check 
       .row
-        .col-sm-12
+        .col-sm-12.payment-size.move-button
           p Only €3 per note       
            i.fa.fa-check 
       .row
@@ -126,4 +138,4 @@ block content
         .col-sm-2
           i.fa.fa-cc-stripe.card
     footer
-      p  © 2015 Nice Notes 
+      p © 2015 Nice Notes  ||  nicenoteshq@gmail.com
